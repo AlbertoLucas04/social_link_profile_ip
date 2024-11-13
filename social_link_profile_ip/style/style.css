@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Playfair_Display";
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Livvic";
+    src: url(../fonts/Livvic/Livvic-Regular.ttf);
+}
+
+
+body {
+    background-color: #004AAD;
+}
+
+
+.geral {
+    text-align: center;
+    /* background-color: #BCF8FA; */
+    background-color: aliceblue;
+    max-width: 430px;
+    width: 90%; 
+    margin: 90px auto 0;
+    border-radius: 36px;
+
+}
+
+#geral_profile_img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 10%;
+}
+
+#geral_title {
+    color: #004AAD;
+    font-family: Playfair_Display;
+    font-size: 36px;
+    
+}
