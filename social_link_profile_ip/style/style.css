@@ -8,21 +8,21 @@
     src: url(../fonts/Livvic/Livvic-Regular.ttf);
 }
 
-
 body {
     background-color: #004AAD;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-
 
 .geral {
     text-align: center;
-    background-color: #BCF8FA;
     background-color: aliceblue;
     max-width: 430px;
     width: 90%; 
     margin: 90px auto 0;
     border-radius: 36px;
-
+    padding: 20px; 
 }
 
 #geral_profile_img {
@@ -36,27 +36,74 @@ body {
     color: #004AAD;
     font-family: Playfair_Display;
     font-size: 36px;
+    margin-top: 20px;
 }
+
 #geral_subtitle {
     color: #004AAD;
     font-family: Livvic;
-    margin-top: -18px;
-    
+    margin-top: -10px;
 }
 
-#geral_link1{
+#geral_link1 {
     font-family: Livvic;
     background-color: #BCF8FA;
     border-radius: 36px;
     font-size: 18px;
-    padding: 5px;
-    margin-left: 30px;
-    margin-right: 30px;
+    padding: 10px 20px; 
+    display: inline-block; 
+    margin: 20px 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #004AAD;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    #geral_profile_img {
+        width: 200px;
+        height: 200px;
+    }
 
+    #geral_title {
+        font-size: 28px;
+    }
+
+    #geral_subtitle {
+        font-size: 16px;
+    }
+
+    #geral_link1 {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .geral {
+        margin-top: 50px;
+        padding: 5px;
+    }
+
+    #geral_profile_img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #geral_title {
+        font-size: 46px;
+    }
+
+    #geral_subtitle {
+        margin-top: -30px;
+        font-size: 18px;
+    }
+
+    #geral_link1 {
+        margin-top: -15px;
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
